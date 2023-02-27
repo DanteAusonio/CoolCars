@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ejX-R7-gmw">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TradesVC-->
+        <scene sceneID="CN1-V3-qvg">
+            <objects>
+                <viewController title="Available Trades" id="mqd-Eu-Rgn" userLabel="TradesVC" customClass="TradingVC" customModule="Cool_Cars_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhl-wg-pru" customClass="WindowShopping">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dq-Ph-oQu">
+                                <rect key="frame" x="0.0" y="752" width="390" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BD-7o-1F2">
+                                        <rect key="frame" x="286" y="8" width="84" height="74"/>
+                                        <state key="normal" title="Button" backgroundImage="circlebadge" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="external-trade-banking-outline-outline-juicy-fish-2" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqY-k0-Gvu">
+                                        <rect key="frame" x="20" y="18" width="74" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Your Vehicle Icon" title=""/>
+                                        <connections>
+                                            <segue destination="SZ7-qi-5Jx" kind="presentation" modalPresentationStyle="fullScreen" id="Ruo-V4-1w3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3BD-7o-1F2" secondAttribute="bottom" constant="10" id="5M2-NS-us5"/>
+                                    <constraint firstAttribute="height" constant="92" id="KKR-UC-rXD"/>
+                                    <constraint firstAttribute="bottom" secondItem="TqY-k0-Gvu" secondAttribute="bottom" constant="10" id="Ski-Sz-TGE"/>
+                                    <constraint firstItem="TqY-k0-Gvu" firstAttribute="leading" secondItem="6dq-Ph-oQu" secondAttribute="leading" constant="20" id="d75-Lg-Yk9"/>
+                                    <constraint firstAttribute="trailing" secondItem="3BD-7o-1F2" secondAttribute="trailing" constant="20" id="eYr-AR-3lX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOk-gJ-77G" customClass="CustomView" customModule="Cool_Cars_Project" customModuleProvider="target">
+                                <rect key="frame" x="16" y="107" width="358" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ford Mustang Apollo" translatesAutoresizingMaskIntoConstraints="NO" id="G3f-Rp-j8a">
+                                        <rect key="frame" x="29" y="8" width="300" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ford Mustang Apollo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bd6-BR-0Mi">
+                                        <rect key="frame" x="29" y="152" width="162" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="gcJ-ia-zJv">
+                                        <rect key="frame" x="263" y="149" width="66" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh0-M7-UbB">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="208"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <connections>
+                                            <action selector="Mustang:" destination="mqd-Eu-Rgn" eventType="touchUpInside" id="W07-d4-gUC"/>
+                                            <segue destination="M3M-SE-rUV" kind="presentation" modalPresentationStyle="fullScreen" id="pX7-Uk-8Hy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g51-yr-PRL" customClass="CustomView" customModule="Cool_Cars_Project" customModuleProvider="target">
+                                <rect key="frame" x="16" y="423" width="358" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Ford Raptor" translatesAutoresizingMaskIntoConstraints="NO" id="jwu-7T-5ni">
+                                        <rect key="frame" x="29" y="0.0" width="300" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ford Raptor" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eak-bE-SkA">
+                                        <rect key="frame" x="29" y="158" width="105" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="RightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="5P8-2F-qtY">
+                                        <rect key="frame" x="263" y="155" width="66" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tm5-TH-K7b">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="225"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <connections>
+                                            <action selector="Raptor:" destination="mqd-Eu-Rgn" eventType="touchUpInside" id="cnT-i7-cbJ"/>
+                                            <segue destination="M3M-SE-rUV" kind="presentation" modalPresentationStyle="fullScreen" id="F3T-1M-0oa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="us0-xw-bVg"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6dq-Ph-oQu" secondAttribute="bottom" id="AuE-qu-Kjt"/>
+                            <constraint firstItem="6dq-Ph-oQu" firstAttribute="leading" secondItem="us0-xw-bVg" secondAttribute="leading" id="bfe-F1-gTm"/>
+                            <constraint firstItem="6dq-Ph-oQu" firstAttribute="trailing" secondItem="us0-xw-bVg" secondAttribute="trailing" id="ze3-3g-7AD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="C9g-4b-JJB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bv0-Af-nZo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192.30769230769229" y="-279.38388625592415"/>
+        </scene>
+        <!--VehicleData-->
+        <scene sceneID="ooI-tm-1a7">
+            <objects>
+                <viewController title="VehicleData" id="M3M-SE-rUV" customClass="VehiclePageVC" customModule="Cool_Cars_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WKd-vi-8Ol">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoO-Jl-gAD">
+                                <rect key="frame" x="16" y="47" width="58" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="mqd-Eu-Rgn" kind="presentation" modalPresentationStyle="fullScreen" id="dKK-4k-LYJ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubX-mj-8og">
+                                <rect key="frame" x="16" y="89" width="358" height="200"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHQ-Ku-pXI">
+                                <rect key="frame" x="0.0" y="752" width="390" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwz-i5-PeW">
+                                        <rect key="frame" x="286" y="8" width="84" height="74"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" backgroundImage="circlebadge" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="external-trade-banking-outline-outline-juicy-fish-2" title=""/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtR-Wp-n5P">
+                                        <rect key="frame" x="20" y="18" width="74" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Your Vehicle Icon" title=""/>
+                                        <connections>
+                                            <segue destination="SZ7-qi-5Jx" kind="presentation" modalPresentationStyle="fullScreen" id="pqf-xX-0AP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="pvz-wB-maK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AuA-Rc-WYS" customClass="DisplayVehicleData" customModule="Cool_Cars_Project" customModuleProvider="target">
+                                <rect key="frame" x="16" y="337" width="358" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-hM-epF">
+                                        <rect key="frame" x="90" y="344" width="178" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Trade">
+                                            <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="TradeBtn:" destination="M3M-SE-rUV" eventType="touchUpInside" id="eut-Uc-ZbL"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-Rx-u0o">
+                                        <rect key="frame" x="8" y="8" width="342" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OH-lU-oWf">
+                                        <rect key="frame" x="8" y="80" width="103" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MPG:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aq1-NY-lLi">
+                                        <rect key="frame" x="8" y="140" width="103" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBi-Rq-K1U">
+                                        <rect key="frame" x="111" y="89" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qc-E0-rR8">
+                                        <rect key="frame" x="111" y="149" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GW4-iT-Jz5">
+                                        <rect key="frame" x="111" y="209" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olO-4v-9Ru">
+                                        <rect key="frame" x="111" y="149" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kz-lk-5Xh">
+                                        <rect key="frame" x="8" y="200" width="103" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UVD-4x-jmC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UVD-4x-jmC" firstAttribute="trailing" secondItem="ubX-mj-8og" secondAttribute="trailing" constant="16" id="0GH-3X-BTn"/>
+                            <constraint firstItem="BoO-Jl-gAD" firstAttribute="leading" secondItem="UVD-4x-jmC" secondAttribute="leading" constant="16" id="0VJ-4u-ryj"/>
+                            <constraint firstItem="ubX-mj-8og" firstAttribute="leading" secondItem="UVD-4x-jmC" secondAttribute="leading" constant="16" id="AEF-zU-PDH"/>
+                            <constraint firstAttribute="bottom" secondItem="yHQ-Ku-pXI" secondAttribute="bottom" id="Qt7-dQ-MlQ"/>
+                            <constraint firstItem="ubX-mj-8og" firstAttribute="top" secondItem="BoO-Jl-gAD" secondAttribute="bottom" constant="8" symbolic="YES" id="eA7-cs-PeT"/>
+                            <constraint firstItem="yHQ-Ku-pXI" firstAttribute="leading" secondItem="UVD-4x-jmC" secondAttribute="leading" id="o6z-0H-hJG"/>
+                            <constraint firstItem="BoO-Jl-gAD" firstAttribute="top" secondItem="UVD-4x-jmC" secondAttribute="top" id="oXQ-a1-cGN"/>
+                            <constraint firstItem="yHQ-Ku-pXI" firstAttribute="trailing" secondItem="UVD-4x-jmC" secondAttribute="trailing" id="xGd-Iu-yXX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5yW-KK-DE8"/>
+                    <connections>
+                        <outlet property="DisplayCarImage" destination="ubX-mj-8og" id="7iZ-Bo-XFf"/>
+                        <outlet property="DisplayName" destination="5IB-Rx-u0o" id="Ajc-s5-bqx"/>
+                        <outlet property="YearTxt" destination="CBi-Rq-K1U" id="xAf-Db-WUx"/>
+                        <outlet property="hpTxt" destination="GW4-iT-Jz5" id="4Vk-KD-SJ4"/>
+                        <outlet property="mpgTxt" destination="olO-4v-9Ru" id="K1Z-Df-ffB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mp0-UX-ZcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101.5384615384614" y="-279.38388625592415"/>
+        </scene>
+        <!--CurrentVC-->
+        <scene sceneID="Ceq-db-H2V">
+            <objects>
+                <viewController id="ejX-R7-gmw" customClass="CurrentVC" customModule="Cool_Cars_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cY-a5-ZWh">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pz-Lg-1CY">
+                                <rect key="frame" x="16" y="373" width="358" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQy-C4-ZDn">
+                                <rect key="frame" x="69" y="480" width="252" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TO NEXT PAGE">
+                                    <fontDescription key="titleFontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="cVF-H0-v0g" kind="show" identifier="NextSegue" id="NLN-HZ-G3o"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example variable" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jmf-0z-B1o">
+                                <rect key="frame" x="69" y="299" width="252" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dNo-wA-Ezq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="exampleVar" destination="Jmf-0z-B1o" id="XV4-my-QGC"/>
+                        <outlet property="nextBtn" destination="GQy-C4-ZDn" id="azm-bH-hr4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdC-Ee-89E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="599"/>
+        </scene>
+        <!--VehicleVC-->
+        <scene sceneID="Yod-07-riC">
+            <objects>
+                <viewController title="Vehicle" id="SZ7-qi-5Jx" userLabel="VehicleVC" customClass="YourVehicleVC" customModule="Cool_Cars_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iW8-QE-TsZ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPR-PC-7f5">
+                                <rect key="frame" x="0.0" y="752" width="390" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDd-TB-KK6">
+                                        <rect key="frame" x="286" y="10" width="84" height="72"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="external-trade-banking-outline-outline-juicy-fish-2" title=""/>
+                                        <connections>
+                                            <segue destination="mqd-Eu-Rgn" kind="presentation" modalPresentationStyle="fullScreen" id="D0E-xi-nlC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idD-Tj-4yv">
+                                        <rect key="frame" x="20" y="18" width="74" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Your Vehicle Icon" title=""/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="PE5-zx-84i"/>
+                                    <constraint firstAttribute="bottom" secondItem="WDd-TB-KK6" secondAttribute="bottom" constant="10" id="RyD-Mn-pCV"/>
+                                    <constraint firstItem="WDd-TB-KK6" firstAttribute="top" secondItem="fPR-PC-7f5" secondAttribute="top" constant="10" id="Ylr-hm-gzX"/>
+                                    <constraint firstItem="idD-Tj-4yv" firstAttribute="leading" secondItem="fPR-PC-7f5" secondAttribute="leading" constant="20" id="fRM-HQ-Txl"/>
+                                    <constraint firstAttribute="bottom" secondItem="idD-Tj-4yv" secondAttribute="bottom" constant="10" id="jHe-fe-5mZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="WDd-TB-KK6" secondAttribute="trailing" constant="20" id="mrg-uZ-Xlh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SGF-d5-t04" customClass="DisplayVehicleData" customModule="Cool_Cars_Project" customModuleProvider="target">
+                                <rect key="frame" x="16" y="344" width="358" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNL-z8-024">
+                                        <rect key="frame" x="8" y="8" width="342" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVh-o8-g6W">
+                                        <rect key="frame" x="8" y="80" width="103" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MPG:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-aq-b08">
+                                        <rect key="frame" x="8" y="140" width="103" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KP3-gl-Jyf">
+                                        <rect key="frame" x="111" y="89" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oC7-cK-DSI">
+                                        <rect key="frame" x="111" y="149" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3RY-gc-gDh">
+                                        <rect key="frame" x="111" y="209" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9FO-OO-pUY">
+                                        <rect key="frame" x="111" y="149" width="115" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdT-RM-nk3">
+                                        <rect key="frame" x="8" y="200" width="103" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geC-0f-tAP">
+                                <rect key="frame" x="16" y="47" width="358" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XTp-uC-GZJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fPR-PC-7f5" secondAttribute="bottom" id="1bT-ut-yfW"/>
+                            <constraint firstItem="fPR-PC-7f5" firstAttribute="trailing" secondItem="XTp-uC-GZJ" secondAttribute="trailing" id="CoH-U4-paj"/>
+                            <constraint firstItem="fPR-PC-7f5" firstAttribute="leading" secondItem="XTp-uC-GZJ" secondAttribute="leading" id="ieF-3R-GCo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0rg-JI-EFN"/>
+                    <connections>
+                        <outlet property="DisplayName" destination="rNL-z8-024" id="Fgs-9s-wZX"/>
+                        <outlet property="VehicleDisplay" destination="geC-0f-tAP" id="PMg-fk-bRI"/>
+                        <outlet property="YearTxt" destination="KP3-gl-Jyf" id="Chz-Bl-aUn"/>
+                        <outlet property="hpTxt" destination="3RY-gc-gDh" id="3at-lG-oOn"/>
+                        <outlet property="mpgTxt" destination="9FO-OO-pUY" id="S6g-ST-m6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOZ-Qz-bfr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-963.07692307692309" y="455.68720379146919"/>
+        </scene>
+        <!--NextVC-->
+        <scene sceneID="8bd-ze-Sxw">
+            <objects>
+                <viewController id="cVF-H0-v0g" customClass="NextVC" customModule="Cool_Cars_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKy-md-9OO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-F6-eZW">
+                                <rect key="frame" x="16" y="373" width="358" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Some Variable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6F-iw-0UU">
+                                <rect key="frame" x="58" y="543" width="275" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rI2-BX-685">
+                                <rect key="frame" x="23" y="47" width="62" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <segue destination="SUP-5A-A4h" kind="unwind" unwindAction="unwindSegue:" id="x1B-Av-hd8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QTJ-wL-6fd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yTZ-G0-4jE"/>
+                    <connections>
+                        <outlet property="someVariable" destination="a6F-iw-0UU" id="IHP-yH-f8R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtj-MH-eaD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SUP-5A-A4h" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2137" y="468"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pqf-xX-0AP"/>
+        <segue reference="F3T-1M-0oa"/>
+        <segue reference="D0E-xi-nlC"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Ford Mustang Apollo" width="333" height="151"/>
+        <image name="Ford Raptor" width="259" height="194"/>
+        <image name="RightArrow" width="16.666666030883789" height="16.666666030883789"/>
+        <image name="Your Vehicle Icon" width="50" height="50"/>
+        <image name="circlebadge" catalog="system" width="128" height="122"/>
+        <image name="external-trade-banking-outline-outline-juicy-fish-2" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
